@@ -454,15 +454,11 @@ atom
 				opacity = new_opacity
 				sd_ApplyLocalLum(affected) */
 			if(opacity == (new_opacity ? 1 : 0)) return
-			var
-				list
-					affected = new
+			var/list/affected = new
 					//spill
-				atom/A
-				turf
-					T
-					ATurf
-			affected = new
+			var/atom/A
+			var/turf/T
+			var/turf/ATurf
 			for(A in range(sd_top_luminosity,src))
 				T = A
 				while(T && !istype(T)) T = T.loc

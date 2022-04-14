@@ -27,7 +27,7 @@ THAT STUPID GAME KIT
 		dat += "<tr>"
 
 		for (var/x = 1 to 8)
-			var/color = (y + x) % 2 ? "#ffffff" : "#999999"
+			var/color_fake = (y + x) % 2 ? "#ffffff" : "#999999"
 			var/piece = copytext(src.board_stat, ((y - 1) * 8 + x) * 2 - 1, ((y - 1) * 8 + x) * 2 + 1)
 
 			dat += "<td>"
